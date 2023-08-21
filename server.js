@@ -48,6 +48,9 @@ app.post("/upload", upload.array("files"), async (req, res) => {
   }
 
   try {
+  await File.deleteMany({});
+    console.log(`Previous files deleted.`);
+    
     const savedFiles = await Promise.all(
       uploadedFiles.map(async (file) => {
         const newFile = new File({
