@@ -36,6 +36,10 @@
   color: black;
 }
 
+.navbar > a:last-child {
+  margin-left: 70%;
+}
+
 .navbar:nth-child(1) a.unclickable {
   pointer-events: none;
   cursor: default;
