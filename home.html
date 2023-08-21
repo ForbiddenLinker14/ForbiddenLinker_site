@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Customized HomePage</title>
+	<link rel="icon" type="images/png" href="images/icon.png">
+	<link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+	<div class="navbar">
+		<img src="images/icon.png" alt="" class="logo">
+		<a href="#" class="unclickable">FORBIDDEN LINKER</a>
+		<a href="#" id="tools">TOOLS</a>
+		<a href="#" id="loginLink">LOGIN</a>
+	</div>
+
+	<div class="status-container">
+        <h3>Status: </h3>
+        <p id="status-text">Loading...</p>
+    </div>
+
+	<div class="heading">
+		<h1>COUSTOMIZED BROWSER HOME</h1>
+		<H2>Click Download For Source Code</H2>
+	</div>
+
+	<div class="feature">
+		<ul>
+			<h2>Features</h2>
+			<li>Customized Widget</li>
+			<li>Background Image Changing</li>
+			<li>Live News</li>
+			<li>Customized Shortcut</li>
+			<li>Rain Effect</li>
+			<li>Responsive</li>
+			<li>Sticky Notes</li>
+		</ul>
+	</div>
+
+	<div class="preview">
+		<img src="images/img.jpeg" alt="Preview Of The Page" style="width: 54.6875vw; height: auto;">
+	</div>
+
+	<div id="loginPopup" class="popup">
+		<span class="close-icon" id="closeIcon">&times;</span>
+		<form id="loginForm">
+			<label for="loginUsername">Username:</label>
+			<input type="text" id="loginUsername" placeholder="Enter your username">
+
+			<label for="loginPassword">Password:</label>
+			<input type="password" id="loginPassword" placeholder="Enter your password">
+
+			<button type="submit" id="loginButton">Login</button>
+		</form>
+	</div>
+	<div class="btn" id="btn">
+		<div id="uploadSection" style="display: none;">
+			<input type="file" id="fileInput" style="display: none;">
+			<button id="uploadButton">Upload</button>
+		</div>
+
+		<div id="downloadSection">
+			<button id="downloadButton">Download</button>
+		</div>
+	</div>
+
+	<script src="server.js"></script>
+	<script src="javascript/cross.js"></script>
+	<script src="javascript/login.js"></script>
+	<script src="javascript/upload.js"></script>
+	<script src="javascript/download.js"></script>
+	<script src="javascript/status.js"></script>
+</body>
+
+</html>
