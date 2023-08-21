@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 
 // Initialize Express app
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5600;
 
 // Configure multer for file upload
 const upload = multer();
